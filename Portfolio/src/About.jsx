@@ -9,8 +9,8 @@ const About = () => {
         const {dark,setDark,page} = useContext(DarkContext)
   return (
       
-    <div className='about' style={dark?{background:"black",color:"white"}:{background:"white",color:"black"}}>
-       { !page?<Navbar/>:null}
+    <div className='about' style={dark?{background:"white",color:"black"}:{background:"black",color:"white"}}>
+       { page?<Navbar/>:null}
         <div className='ab-t'>
         <div className='ab-top'>
         <div className='abd'>
@@ -50,7 +50,7 @@ const About = () => {
           </div>
            <div>
             
-          <button className="aboutme-btn" onClick={()=>navigate("/Skills")} style={dark?{color:"white",border:"2px solid blueviolet"}:{color:"black",border:"2px solid blueviolet"}}>Skills</button>
+          <button className="aboutme-btn" onClick={()=>navigate("/Skills")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>Skills</button>
         </div>
         </div>
     </div>

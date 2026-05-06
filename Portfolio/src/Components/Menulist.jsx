@@ -9,7 +9,7 @@ const Menulist = () => {
      const {page,setPage ,dark,setDark , navbar , setNavbar} = useContext(DarkContext)
     
   return (
-    <div  className='menu-list d-flex justify-content-center align-items-center position-fixed w-100' style={dark?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
+    <div  className='menu-list d-flex justify-content-center align-items-center position-fixed w-100' style={!dark?{backgroundColor:"black",color:"white"}:{backgroundColor:"white",color:"black"}}>
         <div className='inner-menu'>
             
             <div className='menu'onClick={()=>(navigate('/'),
@@ -39,11 +39,11 @@ const Menulist = () => {
                 <span className='p-menu'>Contact</span>
             </div>
             <div className='menu '>
-                <button onClick={()=>setDark(!dark)} className='menu-btn1'>{dark?<i className="bb bi-toggle-on" ></i>:<i className="bb1 bi-toggle-off"></i>}</button>
+                <button onClick={()=>setDark(!dark)} className='menu-btn1'>{!dark?<i className="bb bi-toggle-on" ></i>:<i className="bb1 bi-toggle-off"></i>}</button>
                 <span className='p-menub '>theme</span>
             </div>
             <div className='menu '>
-                <button onClick={()=>setPage(!page)} className='menu-btn1'>{page?<i style={dark?{color:"white"}:{color:"black"}}  className="bb bi-toggle-on" ></i>:<i style={dark?{color:"white"}:{color:"black"}}  className="bb1 bi-toggle-off"></i>}</button>
+                <button onClick={()=>setPage(!page)} className='menu-btn1'>{page?<i style={!dark?{color:"white"}:{color:"black"}}  className="bb bi-toggle-on" ></i>:<i style={!dark?{color:"white"}:{color:"black"}}  className="bb1 bi-toggle-off"></i>}</button>
                 <span className='p-menub '>page</span>
             </div>
         </div>

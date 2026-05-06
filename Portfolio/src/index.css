@@ -3,6 +3,104 @@
     font-family: "Poppins", sans-serif;
   
   font-style: normal;
+}.contact-page{
+  min-height: 100vh;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.contact-box{
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+  background-color: white;
+
+  color: black;
+}
+
+.dark .contact-box{
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.contact-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-text{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-input,
+.contact-textarea{
+  padding: 12px;
+
+  border: 1px solid gray;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 16px;
+}
+
+.contact-textarea{
+  height: 120px;
+  resize: none;
+}
+
+.contact-button{
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: blue;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-button:hover{
+  background-color: darkblue;
 }
 .rounddd{
     border-radius: 20px;
@@ -102,7 +200,11 @@ justify-content: space-between;
 }
 
 .menu-list{
+    
 height: 100vh;
+position: fixed;
+z-index: 999;
+
 
 
 }
@@ -188,13 +290,13 @@ height: 100vh;
     font-size: 30px;
 }
 .home{
-    height: 100vh;
+    height: 130vh;
 }
 .main-img{
-    height: 320px;
+    height: 420px;
     width:330px;
     margin-top: 30px;
-    border: none;
+    border-left: 1px solid;
      border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
    margin-left: auto;
@@ -285,7 +387,7 @@ height: 100vh;
 }
 
 .skills{
-    min-height: 100vh;
+    min-height: 120vh;
     height: max-content;
 }
 .Skill-t{
@@ -308,6 +410,7 @@ height: 100vh;
     accent-color: rgb(69, 0, 133);
 }
 .project{
+    margin-top: 200px;
     height:100vh
 }
 
@@ -379,9 +482,10 @@ height: 100vh;
 }
 
 .menu-list{
+    
 height: 100vh;
-
-
+position:fixed;
+z-index: 999;
 }
 .menu{
     width: 150px;
@@ -465,7 +569,7 @@ height: 100vh;
     font-size: 30px;
 }
 .home{
-    height: 100vh;
+    height: 130vh;
 }
 
 .about{
@@ -473,12 +577,14 @@ height: 100vh;
     height: max-content;
 }
 .main-img{
-    height: 320px;
+    height: 420px;
     width:330px;
-    margin-top: 30px;
-    border: none;
-     border-top-left-radius: 50%;
+     border-radius: 20px;
+          border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    margin-top: 30px;
+      border-left: 1px solid;
+  
    margin-left: auto;
    display: flex;
    margin-right: 0;
@@ -571,7 +677,7 @@ height: 100vh;
 
 
 .skills{
-    height: fit-content
+    height: 120vh
 }
 .Skill-t{
     text-align: center;
@@ -733,7 +839,7 @@ height: 100vh;
     font-size: 30px;
 }
 .home{
-    height: 100vh;
+    height: 130vh;
    
 }
 .h-fix{
@@ -742,12 +848,16 @@ height: 100vh;
 }
 .main-img{
     height: 710px;
-    width:620px;
+    
+    width:450px;
     margin-top: 30px;
     border: none;
     border-radius: 20px;
    margin-left: auto;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
    display: flex;
+   border-left:1px solid  ;
    margin-right: 0;
    
     
@@ -1025,10 +1135,12 @@ height: 100vh;
 }
 .main-img{
     height: 710px;
-    width:620px;
+    width:450px;
+   border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     margin-top: 30px;
-    border: none;
-    border-radius: 20px;
+       border-left:1px solid white ;
+   
    margin-left: auto;
    display: flex;
    margin-right: 0;
@@ -1287,10 +1399,12 @@ height: 100vh;
 }
 .main-img{
     height: 710px;
-    width:620px;
+    width:450px;
     margin-top: 30px;
     border: none;
-    border-radius: 20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left:1px solid white ;
    margin-left: auto;
    display: flex;
    margin-right: 0;

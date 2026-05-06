@@ -29,11 +29,11 @@ const Skills = () => {
       className="skills"
       style={
         dark
-          ? { background: "black", color: "white" }
-          : { background: "white", color: "black" }
+          ?  { background: "white", color: "black" }:{ background: "black", color: "white" }
+          
       }
     >
-      {page?null:<Navbar />}
+      {!page?null:<Navbar />}
       
 
       <p className="Skill-t">

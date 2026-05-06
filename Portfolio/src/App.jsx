@@ -9,6 +9,7 @@ import Contact from './Contact.jsx';
 import Projects from './Projects.jsx';
 import ProjectComponent from './Components/ProjectComponent.jsx';
 import Chat from './Chat.jsx';
+import Navbar from './Navbar.jsx';
 
 function App() {
   const [dark, setDark] = useState(false)
@@ -19,8 +20,9 @@ const [page,setPage]= useState(false)
     <BrowserRouter>
     
       <DarkContext.Provider value={{ page,setPage,dark, setDark ,navbar, setNavbar }}>
-       { page?
-         <div className='d-flex flex-column gap-5 ' style={dark?{background:"black"}:{background:"white"}}>
+       { !page?
+         <div className='d-flex flex-column gap-5 ' style={!dark?{background:"black"}:{background:"white"}}>
+          <div style={{position:"fixed"}}><Navbar/></div>
           <div>
             <Home/>
           </div>

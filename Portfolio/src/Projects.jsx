@@ -8,11 +8,9 @@ const Projects = () => {
   const {dark,setDark,page} = useContext(DarkContext)
   return (
     <div   className='project'    style={
-        dark
-          ? { background: "linear-gradient(to bottom,black 30%,  rgb(37, 0, 70))", color: "white" }
-          : { background: "white", color: "black" }
+        !dark ?  { background: "black", color: "white" }:{ background: "white", color: "black" }
       }>
-      {page?null:<Navbar/>}
+      {!page?null:<Navbar/>}
       <div>
         <h2>Projects & Internships</h2>
        <ProjectComponent/>

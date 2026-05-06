@@ -4,11 +4,11 @@ import DarkContext from './DarkContext'
 
 const Navbar = () => {
   
-  const {dark,setDark , navbar , setNavbar} = useContext(DarkContext)
+  const {dark,setDark,page , navbar , setNavbar} = useContext(DarkContext)
 
   return (
-    <div  className='nav-bar' style={dark?{background:"black",color:"white"}:{background:"white",color:"black"}}>
-        <div className='d-flex justify-content-between '>
+    <div  className='nav-bar' style={dark?{background:"white",color:"black"}:{background:"black",color:"white"}}>
+        <div className='d-flex '>
       
             <div>
               <div>
@@ -19,11 +19,7 @@ const Navbar = () => {
 
             </div>
                   <div>
-                <div className='mt-3'>
-                <p className='' style={{height:"10px",marginRight:"20px"}}>
-                  Portfolio
-                </p>
-              </div>
+              
 
             </div>
         </div>

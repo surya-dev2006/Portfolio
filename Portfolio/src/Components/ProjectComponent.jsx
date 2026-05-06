@@ -1,24 +1,24 @@
 import React, { useState } from 'react'
 import image from '../assets/gsap.png'
-import image2 from '../assets/todo.webp'
+import image2 from '../assets/react.svg'
 import Languages from './Languages';
 import { Button } from 'bootstrap';
 const ProjectComponent = () => {
     const data = [{
         id:1,
         images:image2,
-        title:"TO-DO List",
-        Languages:"fastapi",
-        desc:"created my first project as todo list with fastapi. ",
+        title:"Student Management System",
+        Languages:"React-vite && Express js",
+        desc:" used mongodb for database, api call using axios and db deployed in railway, frontend deployed in vercel, backend deployed in render",
         status:true
     },
 {           
     id:2,
            images:image,
         title:"Online chatbot for healthcare management",
-        Languages:"...",
-        desc:"academic project is ongoing",
-        status:false
+        Languages:"PHP && MySQL",
+        desc:"This is my academic project, a basic programmed chatbot for healthcare management",
+        status:true
     
 }]
    
@@ -29,12 +29,12 @@ const ProjectComponent = () => {
     <div className='d-flex flex-column align-items-center'>
     <div className='single-p'>
         <div className='inside-p'>
-            <img src={show.images} alt="" />
+            <img style={{height:"200px"}} src={show.images} alt="" />
             <p className='status'style={finished?{color:'green'}:{color:'red'}}>{show.status?<div>FINISHED</div>:<div>On-Going</div>}</p>
             <h2 className='project-title'>{show.title}</h2>
             <p className='language used'><b>{show.Languages}</b></p>
             <p className='project-desc'>{show.desc} </p>
-            <button className='view'>view</button>
+            <button className='view'><a href="https://student-management-evla.vercel.app/" style={{textDecoration:"none",color:"white"}}>view</a></button>
         </div>
     </div>
     <div className='d-flex gap-5 mt-2'>

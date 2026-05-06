@@ -3,22 +3,24 @@ import Navbar from "./Navbar.jsx";
 import DarkContext from "./DarkContext.jsx";
 import { useNavigate } from "react-router-dom";
 
-import iam from "./assets/iam.jpeg"
+import iam from "./assets/my1.png"
 const Home = () => {
   const navigate = useNavigate();
   const { dark, setDark ,page} = useContext(DarkContext);
+   function windowloc(){
+    window.location.href="https://github.com/surya-dev2006";
+   }
+   function mailto(){
+    window.location.href = "mailto:suryasubramani20062006@gmail.com"
+   }
   return (
     <div
       className="home"
-      style={
-        dark
-          ? { background: "linear-gradient(to bottom,black 30%,  rgb(37, 0, 70))", color: "white" }
-          : { background: "white", color: "black" }
-      }
+      style={dark?{background:"white",color:"black"}:{background:"black",color:"white"}}
     >
       <div className="">
       
-      <Navbar />
+     { page?<Navbar />:null}
       </div>
       <div className="h-fix">
       <div className="set-pi">
@@ -32,9 +34,9 @@ const Home = () => {
           
           <p className="d-flex align-items-baseline gap-2"><p className="sm">Hi, I'm</p>Surya</p>
           <div className="d-flex gap-2">
-            <button  className="bkb" style={dark?{color:"white"}:{color:"black"}}><i class="bi bi-github"></i></button>
-            <button  className="bkb" style={dark?{color:"white"}:{color:"black"}}><i className="bk bi-instagram"></i></button>
-            <a href="https://www.linkedin.com/in/surya-s-47a851375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="bkb" style={dark?{color:"white"}:{color:"black"}}><i class="bi bi-linkedin"></i></a>
+            <button onClick={windowloc}  className="bkb"  style={dark?{color:"black"}:{color:"white"}}><i class="bi bi-github"></i></button>
+            <button onClick={mailto} className="bkb" style={dark?{color:"black"}:{color:"white"}}><i className="bk bi-envelope-at"></i></button>
+            <a href="https://www.linkedin.com/in/surya-s-47a851375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="bkb" style={dark?{color:"black"}:{color:"white"}}><i class="bi bi-linkedin"></i></a>
           </div>
           </div>
           
@@ -51,7 +53,7 @@ const Home = () => {
           </p>
         </div>
         <div>
-                    <button className="aboutme-btn" onClick={()=>navigate("/about")} style={dark?{color:"white",border:"2px solid blueviolet"}:{color:"black",border:"2px solid blueviolet"}}>About</button>
+                    <button className="aboutme-btn" onClick={()=>navigate("/about")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>About</button>
         </div>
       </div>
       </div>

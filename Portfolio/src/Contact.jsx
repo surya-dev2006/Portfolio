@@ -1,43 +1,99 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Navbar from './Navbar'
-import { useContext } from 'react'
-import axios from 'axios';
+import axios from 'axios'
 import DarkContext from './DarkContext'
-const Contact = () => {
-      const {dark,setDark,page} = useContext(DarkContext)
-      const [name,setName] = useState("");
-      const [email,setEmail] = useState("");
-      const [message,setMessage] = useState("");
 
-  function handleSubmit(e){
+const Contact = () => {
+
+  const { dark, page } = useContext(DarkContext)
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  function handleSubmit(e) {
+
     e.preventDefault()
-       console.log(name + email + message)
-    axios.post('http://192.168.174.176:5173/send',{
-      name:name,
-      mail:email,
-      number:message
-    });
- 
+
+    axios.post('http://localhost:5000/api/send', {
+      name,
+      mail: email,
+      number: message
+    })
+
+      .then(() => {
+
+        setName("")
+        setEmail("")
+        setMessage("")
+
+        alert("Submitted Successfully")
+
+      })
+
+      .catch((err) => {
+        console.log(err)
+      })
   }
+
   return (
-      
-    <div className='contact' style={dark?{background:"black",color:"white"}:{background:"white",color:"black"}}>
-      <>Stay connect!!</>
-        {page?null:<Navbar/>}
-        <div className='d-flex justify-content-center align-items-center hello'>
-            <form action="" onSubmit={handleSubmit} id='form'className='d-flex flex-column align-items-center gap-5'>
-              <div className='d-flex gap-5'>
-                <span>Name</span><input style={dark?{color:"white"}:{color:"black"}} type="text" id='inp'onChange={(e)=>{setName(e.target.value)}}/>
-              </div>
-              <div className='d-flex gap-5'>
-                <span>Email</span><input style={dark?{color:"white"}:{color:"black"}} type="text" id='inp' onChange={(e)=>{setEmail(e.target.value)}}/>
-              </div>
-              <div className='d-flex gap-3'>
-                <span>message </span><textarea style={dark?{color:"white"}:{color:"black"}}id='txta' onChange={(e)=>{setMessage(e.target.value)}}/>
-              </div>
-              <input className='inp-btn' type='submit' value="Submit"/>
-            </form>
+
+    <div
+      className={dark ? "contact-page light" : "contact-page dark"}
+    >
+
+      {!page ? null : <Navbar />}
+
+      <div className="contact-container">
+
+        <div className="contact-box">
+
+          <h1 className="contact-title">
+            Contact
+          </h1>
+
+          <p className="contact-text">
+            Stay connected with us 🚀
+          </p>
+
+          <form
+            onSubmit={handleSubmit}
+            className="contact-form"
+          >
+
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="contact-input"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="contact-input"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+
+            <textarea
+              placeholder="Write your message..."
+              className="contact-textarea"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+
+            <button className="contact-button">
+              Send Message
+            </button>
+
+          </form>
+
         </div>
+
+      </div>
+
     </div>
   )
 }
