@@ -6,7 +6,7 @@ const Message = () => {
   const [loading, setLoading] = useState(true); // optional loading state
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/rec")
+    axios.get("https://portfolio-kjhu.onrender.com/api/rec")
       .then(res => setMessages(res.data))
       .catch(err => console.error("Error fetching data:", err))
       .finally(() => setLoading(false));

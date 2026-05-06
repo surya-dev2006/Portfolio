@@ -15,7 +15,7 @@ const Contact = () => {
 
     e.preventDefault()
 
-    axios.post('http://localhost:5000/api/send', {
+    axios.post('https://portfolio-kjhu.onrender.com/api/send', {
       name,
       mail: email,
       number: message
