@@ -170,7 +170,308 @@ justify-content: space-between;
 }
 
 /* Mobile (phones) */
+@media (max-width: 320px) {
 
+/* ── Global overflow fix ── */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+    .single-skill{
+    
+}
+    .single-p{
+        width: 98%;
+    }
+    .ab{
+    display: flex;
+    flex-direction: column;
+}
+.skilll{
+    height: 160px;
+    width: 160px;
+    margin: 20px;
+    border: 3px solid rgb(187, 174, 199);
+    border-radius: 50px;
+}
+.skill-container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bii{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.menu-list{
+    
+height: 100vh;
+position: fixed;
+z-index: 999;
+
+}
+
+.menu{
+    width: 150px;
+    display: flex;
+    height: 10px;
+    margin-top: 60px;
+    align-items: center;
+    gap: 130px;
+    border-left:3px solid black ;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left:15px ;
+}
+.menu-t{
+        width: 150px;
+    display: flex;
+    height: 10px;
+    margin-top: 60px;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+   
+}
+.bj{
+    margin-bottom: 17px;
+}
+.skilll:hover{
+    border: 3px solid blueviolet;
+}
+
+.p-menub{
+    font-size: larger;
+    position: relative;
+    right: 15px;
+}
+.bi{
+    font-size: 30px;
+}
+.menu-t:hover{
+    color: blueviolet;
+}
+.p-menu{
+    font-size: larger;
+}
+.menu:hover{
+    color: rgb(144, 0, 255);
+    border-color: rgb(144, 0, 255);
+}
+.inner-menu{
+   width: 300px;
+}
+.inner-menu{
+    position: relative;
+    bottom: 40px;
+}
+.menu-btn{
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.menu-btn1{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.bb1{
+    color:black ;
+    font-size: 30px;
+}
+.bb{
+    font-size: 30px;
+}
+.home{
+    height: 130vh;
+    overflow-x: hidden;
+}
+
+/* ── Image: constrain fully to screen ── */
+.main-img{
+    height: 380px;
+    width: 85vw;
+    max-width: 330px;
+    margin-top: 30px;
+    border-left: 1px solid;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin-left: auto;
+    display: block;
+    margin-right: 0;
+    object-fit: cover;
+}
+
+.l-icon{
+    height: 100px;
+    margin-top: 22px;
+}
+.l-name{
+    font-weight: 500;
+}
+
+/* ── Name row: prevent left cut-off ── */
+.above{
+    margin-left: 10px;
+    font-size: 22px;
+    padding-left: 5px;
+}
+.main-name{
+    font-size: 42px;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-weight: 500;
+    justify-content: space-between;
+    word-break: break-word;
+}
+.main-para{
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.bkb{
+    font-size: 26px;
+    background-color: transparent;
+    border: none;
+    margin-right: 8px;
+}
+.set-p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-para::first-line{
+    
+}
+.aboutme-btn{
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-start-end-radius:40px;
+    border-bottom-right-radius: 40px;
+    background-color: transparent;
+    margin-top: 30px;
+}
+.pp{
+    font-size: large;
+}
+.title{
+    font-size: x-large;
+    color: rgb(132, 0, 255);
+}
+.Ab-box{
+    padding: 10px;
+    height: auto;
+    width: calc(100% - 20px);
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-left: 10px;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.sm{
+    font-size: x-large;
+}
+.about{
+    height: max-content;
+    overflow-x: hidden;
+}
+
+.skills{
+    min-height: 120vh;
+    height: max-content;
+    overflow-x: hidden;
+}
+.Skill-t{
+    text-align: center;
+}
+.radio{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 10px;
+}
+.radio-btn{
+    display: flex;
+    align-items: center;
+}
+.round{
+    margin-right: 5px;
+    accent-color: rgb(69, 0, 133);
+}
+.project{
+    margin-top: 50px;
+    height: max-content;
+    min-height: 120vh;
+}
+
+/* ── Form inputs: full width, no overflow ── */
+#inp{
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+    font-size: medium;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+.hello{
+    height: 90vh;
+}
+#txta{
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    background-color: transparent;
+    font-size: medium;
+    padding: 5px;
+    width: 100%;
+}
+.inp-btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* ── Contact box: no fixed width overflow ── */
+.contact-box{
+    width: calc(100vw - 40px);
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* ── Form: remove fixed min-width ── */
+#form{
+    min-width: unset;
+    width: calc(100vw - 30px);
+}
+
+
+
+}
 @media (max-width: 599px) {
 
 /* ── Global overflow fix ── */
