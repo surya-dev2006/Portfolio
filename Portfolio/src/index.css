@@ -399,8 +399,8 @@ z-index: 999;
 }
 
 .skills{
-    min-height: 120vh;
-    height: max-content;
+    min-height: 160vh;
+    height: max-content
     overflow-x: hidden;
 }
 .Skill-t{
