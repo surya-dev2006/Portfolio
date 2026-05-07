@@ -29,13 +29,16 @@ const [page,setPage]= useState(false)
         <div  >
             <About/>
           </div>
-          <div className='single-skill vh-100 mt'>
+          <div className='single-skill '>
         <Skills/>
           </div>
           <div>
             <Projects/>
           </div>
-          <Contact/>
+          <div>
+            <Contact/>
+          </div>
+          
           
           
         </div>:

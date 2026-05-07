@@ -4,6 +4,7 @@
   font-style: normal;
 }.contact-page{
   min-height: 100vh;
+ 
 }
 
 .light{
@@ -138,6 +139,7 @@ justify-content: space-between;
 }
 .home{
     height: max-content;
+     overflow: hidden;
 }
 .single-p{
     display: flex;
@@ -404,6 +406,7 @@ z-index: 999;
     height: max-content;
     overflow-x: hidden;
     overflow-y: scroll;
+   
 }
 .skills::-webkit-scrollbar{
     display: none;
@@ -430,7 +433,7 @@ z-index: 999;
     accent-color: rgb(69, 0, 133);
 }
 .project{
-    
+   
     height: max-content;
     min-height: 120vh;
 }
