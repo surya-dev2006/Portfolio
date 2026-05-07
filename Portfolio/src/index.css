@@ -423,9 +423,9 @@ z-index: 999;
     accent-color: rgb(69, 0, 133);
 }
 .project{
-    margin-top: 200px;
+  
     height: max-content;
-    min-height: 120vh;
+    min-height: 140vh;
 }
 
 /* ── Form inputs: full width, no overflow ── */
