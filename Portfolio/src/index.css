@@ -201,6 +201,7 @@ html, body {
 }
 .skill-container{
     flex-wrap: wrap;
+    
     justify-content: center;
     
 }
@@ -402,6 +403,10 @@ z-index: 999;
     min-height: 120vh;
     height: max-content;
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+.skills::-webkit-scrollbar{
+    display: none;
 }
 .Skill-t{
     text-align: center;
