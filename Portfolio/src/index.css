@@ -202,7 +202,7 @@ html, body {
 .skill-container{
     flex-wrap: wrap;
     justify-content: center;
-    height: 120vh;
+    height: 150vh;
 }
 .bii{
     font-size: 30px;
