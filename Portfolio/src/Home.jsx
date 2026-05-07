@@ -32,7 +32,7 @@ const Home = () => {
         
         <div className="main-name d-flex align-items-center ">
           
-          <p className="d-flex align-items-baseline gap-2"><p className="sm">Hi, I'm</p>Surya</p>
+          <p className="d-flex align-items-baseline gap-2"><p className="sm">I'm</p>Surya</p>
           <div className="d-flex gap-2">
             <button onClick={windowloc}  className="bkb"  style={dark?{color:"black"}:{color:"white"}}><i class="bi bi-github"></i></button>
             <button onClick={mailto} className="bkb" style={dark?{color:"black"}:{color:"white"}}><i className="bk bi-envelope-at"></i></button>
