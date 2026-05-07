@@ -435,7 +435,7 @@ z-index: 999;
 .project{
    
     height: max-content;
-    min-height: 120vh;
+    min-height: 100vh;
 }
 
 /* ── Form inputs: full width, no overflow ── */
