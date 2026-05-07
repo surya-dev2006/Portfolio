@@ -201,7 +201,7 @@ html, body {
     justify-content: center;
     overflow-y: scroll;
     height: 130vh;
-    margin-bottom: 40vh;
+   margin-bottom: 20px;
 }
 .bii{
     font-size: 30px;
@@ -423,7 +423,7 @@ z-index: 999;
     accent-color: rgb(69, 0, 133);
 }
 .project{
-    
+    margin-top: 200px;
     height: max-content;
     min-height: 120vh;
 }
