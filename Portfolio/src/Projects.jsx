@@ -15,12 +15,13 @@ const Projects = () => {
       <div style={!dark ?  { background: "black", color: "white" }:{ background: "white", color: "black" }}>
         <h2>Projects & Internships</h2>
        <ProjectComponent/>
-      </div>
-  <div>
+       <div>
             {!page?
             null:
           <button className="aboutme-btn" onClick={()=>navigate("/contact")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>Contact</button>
              } </div>
+      </div>
+  
     </div>
   )
 }
