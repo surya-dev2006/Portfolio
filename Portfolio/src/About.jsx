@@ -49,9 +49,10 @@ const About = () => {
           </div>
           </div>
            <div>
-            
+            {!page?
+            null:
           <button className="aboutme-btn" onClick={()=>navigate("/Skills")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>Skills</button>
-        </div>
+             } </div>
         </div>
     </div>
   )

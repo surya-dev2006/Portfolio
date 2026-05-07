@@ -1,10 +1,13 @@
 import React, { useContext, useState, useRef, useLayoutEffect } from "react";
 import Navbar from "./Navbar.jsx";
 import DarkContext from "./DarkContext.jsx";
+import { useNavigate } from "react-router-dom";
+import Projects from "./Projects.jsx";
 import Radio from "./Components/Radio.jsx";
 import { gsap } from "gsap";
 
 const Skills = () => {
+  const navigate = useNavigate();
   const { dark ,page } = useContext(DarkContext);
   const [on, setOn] = useState(true);
 
@@ -55,7 +58,8 @@ const Skills = () => {
         />
       )}
 
-  
+           {  !page?null: <button className="aboutme-btn" onClick={()=>navigate("/Projects")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>Projects</button>
+                 }
     </div>
   );
 };

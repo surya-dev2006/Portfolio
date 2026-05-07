@@ -53,7 +53,8 @@ const Home = () => {
           </p>
         </div>
         <div>
-                    <button className="aboutme-btn" onClick={()=>navigate("/about")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>About</button>
+                 {  !page?null: <button className="aboutme-btn" onClick={()=>navigate("/about")} style={dark?{color:"black",border:"2px solid blueviolet"}:{color:"white",border:"2px solid blueviolet"}}>About</button>
+                 }
         </div>
       </div>
       </div>
