@@ -400,8 +400,9 @@ z-index: 999;
 
 .skills{
     min-height: 160vh;
-    height: max-content
-    overflow-x: hidden;
+    height: max-content;
+    overflow-y: scroll;
+    overflow-X: hidden;
 }
 .Skill-t{
     text-align: center;
@@ -471,7 +472,7 @@ z-index: 999;
     width: calc(100vw - 30px);
 }
 
-}
+
 
 /* Tablet (portrait & small tablets) */
 @media (min-width: 600px) and (max-width: 899px) {
