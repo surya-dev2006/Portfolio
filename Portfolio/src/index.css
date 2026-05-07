@@ -182,9 +182,6 @@ html, body {
     box-sizing: border-box;
 }
 
-    .single-skill{
-    
-}
     .single-p{
         width: 98%;
     }
@@ -202,7 +199,7 @@ html, body {
 .skill-container{
     flex-wrap: wrap;
     justify-content: center;
-    overflow-y: auto ;
+    overflow-y: scroll;
 }
 .bii{
     font-size: 30px;
@@ -356,9 +353,7 @@ z-index: 999;
     overflow-x: hidden;
 }
 
-.main-para::first-line{
-    
-}
+
 .aboutme-btn{
     padding: 20px;
     width: 100%;
@@ -660,9 +655,7 @@ z-index: 999;
     flex-direction: column;
     
 }
-.main-para::first-line{
-    
-}
+
 .aboutme-btn{
     padding: 20px;
     width:300px;
@@ -947,9 +940,7 @@ height: 100vh;
     justify-content: center;
     
 }
-.main-para::first-line{
-    
-}
+
 .aboutme-btn{
     padding: 20px;
     width:300px;
@@ -1231,9 +1222,7 @@ height: 100vh;
     justify-content: center;
     
 }
-.main-para::first-line{
-    
-}
+
 .aboutme-btn{
     padding: 20px;
     width:300px;
@@ -1470,9 +1459,7 @@ height: 100vh;
     flex-direction: column;
     
 }
-.main-para::first-line{
-    
-}
+
 .aboutme-btn{
     padding: 20px;
     width:300px;
@@ -1539,4 +1526,4 @@ height: 100vh;
     min-height: 100vh;
 }
 
-}
+}}
