@@ -200,7 +200,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     overflow-y: scroll;
-    height: 130vh;
+    height: 160vh;
 }
 .bii{
     font-size: 30px;
