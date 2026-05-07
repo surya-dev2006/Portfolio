@@ -199,7 +199,7 @@ html, body {
 .skill-container{
     flex-wrap: wrap;
     justify-content: center;
-   
+    overflow-y: scroll;
     height: 130vh;
    margin-bottom: 20px;
 }
@@ -398,7 +398,7 @@ z-index: 999;
 .skills{
     min-height: 160vh;
     height: max-content;
-    
+    overflow-y: scroll;
     overflow-X: hidden;
 }
 .Skill-t{
